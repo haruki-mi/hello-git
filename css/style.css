@@ -175,6 +175,13 @@ main {
         height: 156px;
         border-radius: 0;
         padding: 0;
+        transition-property: top, ;
+        transition-duration: 0.8s;
+    }
+} @media screen and (min-width:767px) {
+    .top-head-body p a {
+        transition-property: bottom,;
+        transition-duration: 0.8s;
     }
 }
 
@@ -208,6 +215,13 @@ main {
     .top-head-body p a {
         padding: 9px 19px;
         font-size: 16px;
+        transition-property: padding,;
+        transition-duration: 0.8s;
+    }
+}  @media screen and (min-width:767px) {
+    .top-head-body p a {
+        transition-property: padding,;
+        transition-duration: 0.8s;
     }
 }
 
