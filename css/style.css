@@ -134,6 +134,7 @@ main {
     top: 0;
     width: 100%;
     height: 100%;
+    /* display: flex; */
 }
 
 .top-head-layer1 {
@@ -172,11 +173,12 @@ main {
 } @media  screen and (max-width:767px) {
     .top-head-body {
         width: 100%;
-        height: 156px;
+        /* height: 156px; */
         border-radius: 0;
         padding: 0;
         transition-property: top, ;
         transition-duration: 0.8s;
+        /* align-items: flex-end; */
     }
 } @media screen and (min-width:767px) {
     .top-head-body p a {
@@ -299,7 +301,7 @@ main {
     text-align: left;
     line-height: 27px;
     margin: 0;
-    text-align: center;
+    text-align: left;
 } 
 
 .icon .fa-user::before {
