@@ -11,25 +11,10 @@ html {
     color: #121212;
     -webkit-text-size-adjust: 100%;
   }
-  /* a:link {
-    color: #2498b3;
-    transition: 0.5s;
-  } */
-  /* a:visited {
-    color: #2498b3;
-  } */
-  /* a:hover {
-    color: #2498b3;
-    text-decoration: none;
-  } */
-  /* a:focus {
-    color: #2498b3;
+
+  a:hover {
     text-decoration: none;
   }
-  a:active {
-    color: #2498b3;
-    text-decoration: none;
-  } */
 
   li {
     list-style: none;

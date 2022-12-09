@@ -97,14 +97,34 @@ nav {
     padding: 0;
 }
 
-.header-link li:last-child{
+.header-link .apply {
     background-color: #2498B3;
-    
 }
 
 li .apply {
     color: white;
     font-family: "YuGothic",
+}
+
+.menu:hover {
+    background-color: #D4F1F8;
+    transition: 0.3s;
+}
+
+.menu-item {
+    padding: 0 50px 0 10px;
+}
+
+.menu-item:hover {
+    background-color: #FFFFFF;
+}
+.open {
+    position: absolute;
+    background-color: #E9F8FB;
+}
+
+.sub-menu {
+    font-weight: normal;
 }
 
 main {
