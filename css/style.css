@@ -86,6 +86,17 @@ nav {
         .header-link li a {
             display: none;
         }
+     } 
+}
+
+.hamburger-menu {
+    display: none;
+} @media screen and (max-width: 1200px){
+    .hamburger-menu { 
+        width: 50px;
+        height: 50px;
+        background-color: blue; 
+        display: block;
     }
 }
 
@@ -106,13 +117,19 @@ li .apply {
     font-family: "YuGothic",
 }
 
-.menu:hover {
+.menu a:hover {
     background-color: #D4F1F8;
     transition: 0.3s;
 }
 
-.menu-item {
-    padding: 0 50px 0 10px;
+.sub-menu a:hover {
+    color:#2498B3;
+    background-color: #FFFFFF;
+}
+
+.sub-menu .menu-item a {
+    padding: 15px 60px 15px 15px;
+    height: auto;
 }
 
 .menu-item:hover {
