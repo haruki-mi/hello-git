@@ -13,6 +13,10 @@ a {
     left: 0;
     background-color: #fff;
     z-index: 500;
+} @media screen and (max-width:1200px) {
+    .header {
+        display: flex;
+    }
 }
 
 .header-title {
@@ -73,68 +77,110 @@ nav {
     font-weight: 700;
 }
 
-.header-link li a{
-    padding:0 15px;
-    display: flex;
-    align-items: center;
-    height: 70px;
-} @media screen and (max-width: 1260px) {
-    .header-link li a {
-        padding: 0 10px;
-    }
-  @media  screen and (max-width: 1200px) {
-        .header-link li a {
-            display: none;
-        }
-     } 
-}
-
-.hamburger-menu {
+.nav-btn {
     display: none;
 } @media screen and (max-width: 1200px){
-    .hamburger-menu { 
+    .nav-btn { 
         width: 50px;
         height: 50px;
         background-color: blue; 
         display: block;
+        margin: 0 0 0 auto ;
     }
 }
+
+@media screen and (max-width:1200px) {
+    .closed {
+        display: none;
+    }
+}
+
+/*1200ピクセル以下でナビゲーション削除（ハンバーガーメニューに格納） */
+/* ボタンを押した時にこのコードを削除 */
 
 .header nav ul {
     display: flex;
     align-items: center;
-    /* background-color: brown; */
     margin: 0;
     padding: 0;
+} 
+
+ @media screen and (max-width:1200px) {
+    .header nav ul {
+        display: inline;
+        position: absolute;
+        left: 0;
+        right: 0;
+    } 
+} 
+
+/* ↑これを適用して上記の「1200ピクセル以下でナビゲーション削除」を非適用にした状態がボタンを押して展開した状態 */
+
+.header-link li a{
+    padding:0 15px;
+    display: flex; 
+    align-items: center;
+    height: 70px;
+    background-color: #FFFFFF;
+} @media screen and (max-width: 1260px) {
+    .header-link li a {
+        padding: 0 10px;
+    }
 }
+ @media screen and (max-width: 1200px) {
+    .header-link li a {
+        height: auto;
+        padding: 10px;
+    }
+}
+
 
 .header-link .apply {
     background-color: #2498B3;
+}  @media screen and (max-width:1200px) {
+    .header-link .apply {
+        display: none;
+    }
 }
+
 
 li .apply {
     color: white;
     font-family: "YuGothic",
 }
 
-.menu a:hover {
+.menu-a:hover {
     background-color: #D4F1F8;
     transition: 0.3s;
+} @media screen and (max-width:1200px) {
+    .menu-a:hover {
+        background-color: #f3fafb;
+    }
 }
 
-.sub-menu a:hover {
-    color:#2498B3;
-    background-color: #FFFFFF;
-}
-
-.sub-menu .menu-item a {
+.menu .sub-menu .menu-item a {
     padding: 15px 60px 15px 15px;
     height: auto;
 }
 
-.menu-item:hover {
-    background-color: #FFFFFF;
+.menu .sub-menu .menu-item a{
+    background-color: #E9F8FB;
+} @media  screen and (max-width:1200px) {
+    .menu .sub-menu .menu-item a{
+        background-color: #FFF;
+    }
 }
+
+.menu .sub-menu .menu-item a:hover {
+    background-color: #FFFFFF;
+    color: #2498B3;
+} @media screen and (max-width:1200px) {
+    .menu .sub-menu .menu-item a:hover {
+        background-color: #f3fafb;
+        color: black;
+    }
+} 
+
 .open {
     position: absolute;
     background-color: #E9F8FB;

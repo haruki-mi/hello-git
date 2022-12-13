@@ -10,3 +10,9 @@ item.forEach(function (element) {
         element.querySelector(".sub-menu").style.display="none";
     },false);
 });
+
+const Globalnav = document.querySelector(".global-nav");
+const navbtn = document.querySelector(".nav-btn");
+navbtn.addEventListener("click", () => {
+    Globalnav.classList.toggle("closed");
+})
