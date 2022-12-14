@@ -75,6 +75,9 @@ a {
 
 nav {
     font-weight: 700;
+    position: absolute;
+    left:0;
+    right:0;
 }
 
 .nav-btn {
@@ -108,13 +111,14 @@ nav {
  @media screen and (max-width:1200px) {
     .header nav ul {
         display: inline;
-        position: absolute;
+        position: relative;
         left: 0;
         right: 0;
     } 
 } 
 
 /* ↑これを適用して上記の「1200ピクセル以下でナビゲーション削除」を非適用にした状態がボタンを押して展開した状態 */
+/* absoluteをrelativeに帰れば動きは解決するが右端に寄ってしまう */
 
 .header-link li a{
     padding:0 15px;
@@ -158,9 +162,20 @@ li .apply {
     }
 }
 
+/* @media screen and (max-width:1200px) {
+    .menu .sub-menu .menu-item {
+        position: relative;
+    }
+} */
+
+
 .menu .sub-menu .menu-item a {
     padding: 15px 60px 15px 15px;
     height: auto;
+} @media screen and (max-width:1200px) {
+    .menu .sub-menu .menu-item a {
+        padding: 15px 60px 15px 25px;
+    }
 }
 
 .menu .sub-menu .menu-item a{
@@ -184,6 +199,10 @@ li .apply {
 .open {
     position: absolute;
     background-color: #E9F8FB;
+} @media screen and (max-width:1200px) {
+    .open {
+        /* position: relative; */
+    }
 }
 
 .sub-menu {
