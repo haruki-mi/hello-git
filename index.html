@@ -10,7 +10,7 @@
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <title>RaiseTech（レイズテック） | 最速で稼げるプロになるエンジニアリングスクール</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -28,7 +28,10 @@
                 <div class="nav-btn"></div>
             <nav class="global-nav closed">
                 <ul class="ham">
-                    <li class="menu"><a href="#" class="menu-a">はじめての方へ</a>
+                    <li class="menu">
+                        <a href="#" class="menu-a">
+                            はじめての方へ
+                        </a>
                         <ul class="sub-menu ham" style="display:none;">
                             <li class="menu-item"><a href="http://176.34.11.254/about-raisetech">マンガでわかるRaiseTech</a></li>
                             <li class="menu-item"><a href="http://176.34.11.254/support">サポート体制</a></li>
@@ -121,9 +124,23 @@
         </div>
         <div class="vacant"></div>
     </main>
-
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     
+    <script>
+        $(function() {
+            $(".menu-a").hover(
+                function() {
+                    $(this).next("ul").addClass("open").slideDown().css("display","block");
+                    // alert("ホバーされたよ！");
+                },
+                function() {
+                    $(this).next("ul").removeClass("open");
+                    // alert("ホバーアウトされたよ！");
+                }
+            )
+        })
+    </script>
 </body>
 </html>
 

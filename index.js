@@ -13,20 +13,33 @@
 
 // Javascriptのコード
 
-$(function() {
-    $(".menu-a").hover(
-        function() {
-            $(this).next().slideDown();
-        },
-        function() {
-            $(this).next().slideUp();
-        }
-    );
-})
+// $(function() {
+//     $(".menu-a").hover(
+//         function() {
+//             $(this).next().slideDown();
+//         },
+//         function() {
+//             $(this).next().slideUp();
+//         }
+//     );
+// })
 
 
-const Globalnav = document.querySelector(".global-nav");
-const navbtn = document.querySelector(".nav-btn");
-navbtn.addEventListener("click", () => {
-    Globalnav.classList.toggle("closed");
-})
+// const Globalnav = document.querySelector(".global-nav");
+// const navbtn = document.querySelector(".nav-btn");
+// navbtn.addEventListener("click", () => {
+//     Globalnav.classList.toggle("closed");
+// })
+
+// $(function() {
+//     $(".menu-a").hover(
+//         function() {
+//             $(this).next("ul").addClass("open").slideDown().css("display","block");
+//             // alert("ホバーされたよ！");
+//         },
+//         function() {
+//             $(this).next("ul").removeClass("open");
+//             // alert("ホバーアウトされたよ！");
+//         }
+//     )
+// })
