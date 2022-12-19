@@ -22,7 +22,7 @@ a {
 .header-title {
     display: flex;
     width: 160px;
-    align-items: center;
+    /* align-items: center; */
     margin: 0 0 0 21px;
 }  @media screen and (max-width:1200px) {
     .header-title {
@@ -104,16 +104,16 @@ nav {
 /*1200ピクセル以下でナビゲーション削除（ハンバーガーメニューに格納） */
 /* ボタンを押した時にこのコードを削除 */
 
-.header nav ul {
+.ham {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     margin: 0;
     padding: 0;
 } 
 
  @media screen and (max-width:1200px) {
     .header nav ul {
-        display: inline;
+        display: block;
         position: relative;
         left: 0;
         right: 0;
@@ -199,10 +199,21 @@ li .apply {
     }
 } 
 
-.open {
+.sub-menu {
     position: absolute;
-    background-color: #E9F8FB;
+    display: inline;
+}
+
+.open { 
+    width: auto;
 } 
+
+@media screen and (max-width:1200px) {
+    .open {
+        position: absolute;
+        background-color: #E9F8FB;
+    } 
+}
 
 .sub-menu {
     font-weight: normal;
