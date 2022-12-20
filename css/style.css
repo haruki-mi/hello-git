@@ -88,11 +88,37 @@ nav {
 } @media screen and (max-width: 1200px){
     .nav-btn { 
         width: 50px;
-        height: 50px;
-        background-color: blue; 
+        height: 50px; 
         display: block;
-        margin: 0 0 0 auto ;
+        /* margin: 0 0 0 auto ; */
+        position: relative;
+        background-color: #FFF;
+        transition: 0.5s;
     }
+} @media  screen and (max-width:1200px) {
+    .nav-btn span {
+        display: block;
+        width: 23px;
+        height: 2px;
+        background-color: #2498B3;
+        transition: all 0.2s;
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+} @media screen and (max-width:1200px) {
+    .nav-btn span:nth-child(1) {
+        top:15px;
+    }
+    .nav-btn span:nth-child(2) {
+        top: 24px;
+    }
+    .nav-btn span:nth-child(3) {
+        top: 33px;
+    }
+
 }
 
 @media screen and (max-width:1200px) {
@@ -101,8 +127,29 @@ nav {
     }
 }
 
+@media screen and (max-width:1200px) {
+    .btn-open {
+        background-color: #2498B3;
+        transition: 0.5s;
+    }
+    .btn-open span {
+        background-color: #FFF;
+    }
+    .btn-open span:nth-child(1) {
+        transform: translateY(9px) rotate(-45deg);
+    }
+    .btn-open span:nth-child(2) {
+        opacity: 0;
+    }
+    .btn-open span:nth-child(3) {
+        transform: translateY(-9px) rotate(-135deg);
+    }
+}
+    
+
 /*1200ピクセル以下でナビゲーション削除（ハンバーガーメニューに格納） */
 /* ボタンを押した時にこのコードを削除 */
+
 
 .ham {
     display: flex;

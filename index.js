@@ -29,6 +29,7 @@ const Globalnav = document.querySelector(".global-nav");
 const navbtn = document.querySelector(".nav-btn");
 navbtn.addEventListener("click", () => {
     Globalnav.classList.toggle("closed");
+    navbtn.classList.toggle("btn-open");
 })
 
 // $(function() {
