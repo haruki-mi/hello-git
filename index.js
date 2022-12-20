@@ -46,16 +46,12 @@ navbtn.addEventListener("click", () => {
 // })
 
 $(function() {
-    function submenu() {
-        $(".menu").children(".sub-menu");
-    }
-
     $(".menu").hover(
         function() {
-            submenu().slideDown("fast").stop();
+            $(".sub-menu:not(:animated)",this).slideDown("fast");
         },
         function() {
-            submenu().slideUp("fast").stop();
+            $(".sub-menu",this).css("display","none");
         }
     )
 })
