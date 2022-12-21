@@ -85,7 +85,9 @@ nav {
 
 .nav-btn {
     display: none;
-} @media screen and (max-width: 1200px){
+} 
+
+@media screen and (max-width: 1200px){
     .nav-btn { 
         width: 50px;
         height: 50px; 
@@ -95,7 +97,6 @@ nav {
         background-color: #FFF;
         transition: 0.5s;
     }
-} @media  screen and (max-width:1200px) {
     .nav-btn span {
         display: block;
         width: 23px;
@@ -108,7 +109,6 @@ nav {
         right: 0;
         margin: auto;
     }
-} @media screen and (max-width:1200px) {
     .nav-btn span:nth-child(1) {
         top:15px;
     }
@@ -146,11 +146,6 @@ nav {
     }
 }
     
-
-/*1200ピクセル以下でナビゲーション削除（ハンバーガーメニューに格納） */
-/* ボタンを押した時にこのコードを削除 */
-
-
 .ham {
     display: flex;
     /* align-items: center; */
@@ -166,9 +161,6 @@ nav {
         right: 0;
     } 
 } 
-
-/* ↑これを適用して上記の「1200ピクセル以下でナビゲーション削除」を非適用にした状態がボタンを押して展開した状態 */
-/* absoluteをrelativeに帰れば動きは解決するが右端に寄ってしまう */
 
 .header-link li a{
     padding:0 15px;
@@ -203,6 +195,41 @@ li .apply {
     font-family: "YuGothic",
 }
 
+@media screen and (max-width:1200px) {
+    .toggle::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        right: 13px;
+        background-color: #121212;
+        z-index: 5;
+    }
+    .toggle::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 2px;
+        height: 24px;
+        right: 24px;
+        background-color: #121212;
+        z-index: 5;
+    }
+    .toggle-open::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #F7F7F7;
+        z-index: 3;
+    }
+}
+
 .menu-a:hover {
     background-color: #D4F1F8;
     transition: 0.3s;
@@ -211,13 +238,6 @@ li .apply {
         background-color: #f3fafb;
     }
 }
-
-/* @media screen and (max-width:1200px) {
-    .menu .sub-menu .menu-item {
-        position: relative;
-    }
-} */
-
 
 .menu .sub-menu .menu-item a {
     padding: 15px 60px 15px 15px;
@@ -434,6 +454,9 @@ main {
     .article-box article {
         width: auto;
         margin-bottom: 40px;
+    }
+    .article-box article p{
+        text-align: center;
     }
     .article-box article:last-child {
         margin-bottom: 16px;

@@ -10,7 +10,6 @@
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <title>RaiseTech（レイズテック） | 最速で稼げるプロになるエンジニアリングスクール</title>
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -25,8 +24,6 @@
         </div>
 
         <div class="header-link">
-
-                <!-- <div class="nav-btn"></div> -->
             <div class="nav-btn">
                 <span></span>
                 <span></span>
@@ -34,8 +31,9 @@
             </div>
             <nav class="global-nav closed">
                 <ul class="ham">
-                    <li class="menu"><a href="#" class="menu-a">はじめての方へ</a>
-                        <ul class="sub-menu ham" style="display:none;">
+                    <li class="menu">
+                        <a href="#" class="menu-a toggle">はじめての方へ</a>
+                        <ul class="sub-menu ham " style="display:none;">
                             <li class="menu-item"><a href="http://176.34.11.254/about-raisetech">マンガでわかるRaiseTech</a></li>
                             <li class="menu-item"><a href="http://176.34.11.254/support">サポート体制</a></li>
                             <li class="menu-item"><a href="http://176.34.11.254/trial-program">トライアル受講</a></li>
@@ -43,7 +41,8 @@
                             <li class="menu-item"><a href="http://176.34.11.254/user-flow">ご利用の流れ</a></li>
                         </ul>
                     </li>
-                    <li class="menu"><a href="#" class="menu-a">コース案内</a>
+                    <li class="menu">
+                        <a href="#" class="menu-a toggle">コース案内</a>
                         <ul class="sub-menu ham" style="display: none;">
                             <li class="menu-item"><a href="http://176.34.11.254/courses/marketing-course">マーケティングコース</a></li>
                             <li class="menu-item"><a href="http://176.34.11.254/courses/design-course">デザインコース</a></li>
@@ -54,18 +53,21 @@
                             <li class="menu-item"><a href="http://176.34.11.254/courses/java-framework-course">Javaフレームワークコース</a></li>
                             
                         </ul>
-                    <li class="menu"><a href="#" class="menu-a">講師紹介</a></li>
-                    <li class="menu"><a href="#" class="menu-a">卒業生の声・実績</a>
+                    <li class="menu"><a href="#" class="menu-a teachers">講師紹介</a></li>
+                    <li class="menu">
+                        <a href="#" class="menu-a toggle">卒業生の声・実績</a>
                         <ul class="sub-menu ham" style="display: none;">
                             <li class="menu-item"><a href="http://176.34.11.254/graduates">卒業生の声</a></li>
                             <li class="menu-item"><a href="http://176.34.11.254/achievement">転職・案件実績</a></li>
                         </ul>
-                    <li class="menu"><a href="#" class="menu-a">メディア</a>
+                    <li class="menu">
+                        <a href="#" class="menu-a toggle">メディア</a>
                         <ul class="sub-menu ham" style="display: none;">
                             <li class="menu-item"><a href="http://176.34.11.254/movie">動画一覧</a></li>
                             <li class="menu-item"><a href="http://176.34.11.254/media">掲載記事一覧</a></li>
                         </ul>
-                    <li class="menu"><a href="#" class="menu-a">サポート</a>
+                    <li class="menu">
+                        <a href="#" class="menu-a toggle">サポート</a>
                         <ul class="sub-menu ham" style="display: none;">
                             <li class="menu-item"><a href="http://176.34.11.254/faq">よくあるご質問</a></li>
                             <li class="menu-item"><a href="http://176.34.11.254/inquiry">お問い合わせ</a></li>
@@ -127,23 +129,8 @@
         </div>
         <div class="vacant"></div>
     </main>
-    <!-- <script src="index.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src = "index.js"></script>
-    <!-- <script>
-        $(function() {
-            $(".menu-a").hover(
-                function() {
-                    $(this).next("ul").addClass("open").slideDown().css("display","block");
-                    // alert("ホバーされたよ！");
-                },
-                function() {
-                    $(this).next("ul").removeClass("open");
-                    // alert("ホバーアウトされたよ！");
-                }
-            )
-        })
-    </script> -->
 </body>
 </html>
 
