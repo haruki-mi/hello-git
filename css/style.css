@@ -4,6 +4,7 @@ a {
     color: black;
 }
 
+/* ---ヘッダー ---*/
 .header { 
     display: flex;
     justify-content: space-between;
@@ -22,7 +23,6 @@ a {
 .header-title {
     display: flex;
     width: 160px;
-    /* align-items: center; */
     margin: 0 0 0 21px;
 }  @media screen and (max-width:1200px) {
     .header-title {
@@ -73,23 +73,8 @@ a {
     font-size: 18px;
 }
 
-nav {
-    font-weight: 700;
-    display: block;
-} @media screen and (max-width:1200px) {
-   nav {
-    position: absolute;
-    left:0;
-    right:0;
-    display: none;
-   } 
-   /* @media screen and (min-width:1200px) {
-    nav {
-        display: block;
-    }
-   } */
-}
 
+/* ---ハンバーガーボタン--- */
 .nav-btn {
     display: none;
 } @media screen and (max-width: 1200px){
@@ -97,7 +82,6 @@ nav {
         width: 50px;
         height: 50px; 
         display: block;
-        /* margin: 0 0 0 auto ; */
         position: relative;
         background-color: #FFF;
         transition: 0.5s;
@@ -144,54 +128,6 @@ nav {
         transform: translateY(-9px) rotate(-135deg);
     }
 }
-    
-.ham {
-    display: flex;
-    margin: 0;
-    padding: 0;
-} 
-
- @media screen and (max-width:1200px) {
-    .header nav ul {
-        display: block;
-        position: relative;
-        left: 0;
-        right: 0;
-    } 
-} 
-
-.header-link li a{
-    padding:0 15px;
-    display: flex; 
-    align-items: center;
-    height: 70px;
-    background-color: #FFFFFF;
-} @media screen and (max-width: 1260px) {
-    .header-link li a {
-        padding: 0 10px;
-    }
-}
- @media screen and (max-width: 1200px) {
-    .header-link li a {
-        height: auto;
-        padding: 10px;
-    }
-}
-
-
-.header-link .apply {
-    background-color: #2498B3;
-}  @media screen and (max-width:1200px) {
-    .header-link .apply {
-        display: none;
-    }
-}
-
-
-li .apply {
-    color: white;
-    font-family: "YuGothic",
-}
 
 @media screen and (max-width:1200px) {
     .toggle::before {
@@ -227,6 +163,68 @@ li .apply {
         z-index: 3;
     }
 }
+
+/* ---ナビゲーションメニュー--- */
+nav {
+    font-weight: 700;
+    display: block;
+} @media screen and (max-width:1200px) {
+   nav {
+    position: absolute;
+    left:0;
+    right:0;
+    display: none;
+   } 
+}
+
+.ham {
+    display: flex;
+    margin: 0;
+    padding: 0;
+} 
+
+ @media screen and (max-width:1200px) {
+    .header nav ul {
+        display: block;
+        position: relative;
+        left: 0;
+        right: 0;
+    } 
+} 
+
+.header-link li a{
+    padding:0 15px;
+    display: flex; 
+    align-items: center;
+    height: 70px;
+    background-color: #FFFFFF;
+} @media screen and (max-width: 1260px) {
+    .header-link li a {
+        padding: 0 10px;
+    }
+}
+ @media screen and (max-width: 1200px) {
+    .header-link li a {
+        height: auto;
+        padding: 10px;
+    }
+}
+
+.header-link .apply {
+    background-color: #2498B3;
+}  @media screen and (max-width:1200px) {
+    .header-link .apply {
+        display: none;
+    }
+}
+
+
+li .apply {
+    color: white;
+    font-family: "YuGothic",
+}
+
+
 
 .menu-a {
     position: relative;
@@ -288,6 +286,7 @@ li .apply {
     font-weight: normal;
 }
 
+/* ---メインコンテンツ--- */
 main {
     margin-top: 70px;
 }  @media screen and (max-width:1200px) {
@@ -351,16 +350,13 @@ main {
     padding: 43px 40px 19px 40px;
     background-color: #FFF;
     font-weight: 700;
-    /* height: 328px; */
 } @media  screen and (max-width:767px) {
     .top-head-body {
         width: 100%;
-        /* height: 156px; */
         border-radius: 0;
         padding: 0;
         transition-property: top, ;
         transition-duration: 0.8s;
-        /* align-items: flex-end; */
     }
 } @media screen and (min-width:767px) {
     .top-head-body p a {
@@ -418,6 +414,7 @@ main {
     }
 } 
 
+/* 黒い部分 */
 .black-narrow {
     background-color: black;
     padding: 4em 0;
@@ -497,7 +494,6 @@ main {
     font-size: 100px;
     display: inline-block;
     color: black;
-    /* background-color: red; */
 }
 
 .vacant {
