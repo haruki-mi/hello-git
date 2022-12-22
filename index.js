@@ -21,4 +21,14 @@ $(function() {
             $(".toggle",this).removeClass("toggle-open");
         }
     )
+
+    let windowWidth = $(window).width();
+    const windowbreak = 1200;
+    if (windowWidth >= windowbreak) {
+        $(".global-nav").css("display","block");
+        console.log("large");
+    } else {
+        $(".global-nav").css("display","none");
+        console.log("small")
+    }
 })

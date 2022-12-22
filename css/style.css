@@ -75,19 +75,24 @@ a {
 
 nav {
     font-weight: 700;
+    display: block;
 } @media screen and (max-width:1200px) {
    nav {
     position: absolute;
     left:0;
     right:0;
+    display: none;
    } 
+   /* @media screen and (min-width:1200px) {
+    nav {
+        display: block;
+    }
+   } */
 }
 
 .nav-btn {
     display: none;
-} 
-
-@media screen and (max-width: 1200px){
+} @media screen and (max-width: 1200px){
     .nav-btn { 
         width: 50px;
         height: 50px; 
@@ -122,12 +127,6 @@ nav {
 }
 
 @media screen and (max-width:1200px) {
-    .closed {
-        display: none;
-    }
-}
-
-@media screen and (max-width:1200px) {
     .btn-open {
         background-color: #2498B3;
         transition: 0.5s;
@@ -148,7 +147,6 @@ nav {
     
 .ham {
     display: flex;
-    /* align-items: center; */
     margin: 0;
     padding: 0;
 } 
